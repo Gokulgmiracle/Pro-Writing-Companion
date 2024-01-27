@@ -1,0 +1,30 @@
+#Title
+{
+    color: #FCCF40 !important;
+    font-size: 30px;
+}
+
+#readMoreBtn {
+    background-color: #FCCF40 !important;
+    color:#fff;
+}
+#homeNav,#aboutNav,#navGrammer,#navSpellChecker,#navLogin,#navSummarization{
+    color: #FCCF40 !important;
+}
+#headGrammer{
+    font-size: 30px;
+    color: #FCCF40 !important;
+}
+.text-black{
+    color: black;
+}
+.btn-back{
+    background-color: #FCCF40 !important;
+}
+.text-bold{
+    font-weight: 600;
+}
+#SpellCheckResult{
+    font-size: 25px;
+}
+

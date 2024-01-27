@@ -1,0 +1,6 @@
+Flask
+ibm-db
+re
+textblob
+requests
+json

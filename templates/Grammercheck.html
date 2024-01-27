@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="about d-lg-flex justify-content-center align-items-center" id="about">
+  <div class="container">
+    <div class="row d-block">
+
+      <div class="d-flex flex-row justify-content-center">
+        <div class="col-12  col-md-7 text-center">
+          <form action='/grammar' method="POST">
+            <div class="about-text">
+              <h1 class="animated animated-text">
+                <span id="headGrammer" class="mr-2">GRAMMER CHECKER AND PARAPHRASER</span>
+              </h1>
+
+              <textarea name="text" class="form-control " rows="6" cols="50"></textarea>
+
+              <div class="custom-btn-group mt-4">         
+                  <button type="submit" class="btn mr-lg-2 text-black btn-back custom-btn">Analyse</button>
+              </div>
+              <div>
+                <p class="text-black text-bold">Sentiment Polarity : {{sentiment}}</p>
+                <p class="text-black text-bold">Noun Phrases : {{noun_phrases}}</p>
+              </div>
+              <div class="">
+                <p class="text-danger">{{message}}</p>
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock %}

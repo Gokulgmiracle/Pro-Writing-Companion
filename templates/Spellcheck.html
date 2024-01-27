@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="about d-lg-flex justify-content-center align-items-center" id="about">
+  <div class="container">
+    <div class="row d-block">
+
+      <div class="d-flex flex-row justify-content-center">
+        <div class="col-12  col-md-7 text-center">
+          <form action='/Spell' method="POST">
+            <div class="about-text">
+              <h1 class="animated animated-text">
+                <span id="headGrammer" class="mr-2">SPELL CHECKER</span>
+              </h1>
+
+              <textarea name="fieldvalues" class="form-control " rows="6" cols="50"></textarea>
+
+              <div class="custom-btn-group mt-4">
+                  <button type="submit" class="btn mr-lg-2 text-black btn-back custom-btn">Spell Checker</button>
+              </div>
+              <div class="text-left">
+                <p id="SpellCheckResult" class="text-black text-bold">Spell Check Results</p>
+                <p class="text-black">Word : {{word}}</p>
+                <p class="text-black">Spelling Errors Count : {{spelling_error_count}}</p>
+              </div><div class="text-center">
+                <p class="text-danger">{{message}}</p>
+              </div>
+              
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+{% endblock %}

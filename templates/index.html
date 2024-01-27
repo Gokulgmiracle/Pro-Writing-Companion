@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <section class="about d-lg-flex justify-content-center align-items-center" id="about">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-5 col-md-12 col-12">
+          <div class="about-image svg">
+            <img src="../static/images/HomePageMaN.jpg" class="img-fluid" alt="svg image">
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+          <div class="about-text">
+            <p class="text-success">{{msg}}</p>
+            <h1 class="animated animated-text">
+              <span class="mr-2">Spell Checker</span>
+
+            </h1>
+
+            <p>Grammerly can be used for a varity of writing tasks such as emails, essays, reports, social media posts,
+              and more.</p>
+
+            <div class="custom-btn-group mt-4">
+              <a id="readMoreBtn" href="#" class="btn mr-lg-2 custom-btn"><i class='uil keyboard-arrow-right'></i> Read
+                More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% endblock %}
